@@ -1,0 +1,75 @@
+.calc {
+    max-width: max-content;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    backdrop-filter: blur(20px);
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.2);
+
+
+
+    input {
+        padding: 10px;
+        box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.2);
+        border: 1px solid lightgray;
+
+        background-color: #fff;
+
+        color: #000;
+        font-weight: 700;
+        font-size: 18px;
+
+        max-width: 254px;
+        width: 100%;
+     
+    }
+
+    button {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border-radius: 50%;
+        border: 1px solid lightgray;
+
+        font-weight: 700;
+        font-size: 20px;
+
+        box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.2);
+
+        cursor: pointer;
+        transition: all .3s;
+        scale: 1;
+
+        &:active {
+            box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0);
+            scale: 0.9;
+        }
+    }
+
+    
+}
+
+
+.row {
+    display: flex;
+    gap: 5px;
+}
+
+.row-last {
+    button {
+        width: 100%;
+        border-radius: 50px;
+    }
+}
